@@ -13,11 +13,14 @@ import {
 
 import Loader from '../components/layouts/loader';
 import Versions from '../components/layouts/attribute/versions';
+import Footer from '../components/b2s/layout/footer';
+import Theme from '../components/b2s/layout/resource';
 
 //import My_account from '../containers/faq/my_account';
 
 import Survey from '../containers/Survey';
 import Test from '../components/Survey/test';
+
 
 export default () => {
 
@@ -29,6 +32,7 @@ export default () => {
 
   return (
     <div className="bg-red">
+      <Theme />
       <Loader />
       <Versions />
       <section>
@@ -39,9 +43,7 @@ export default () => {
           </Switch>
         </div>
       </section>
-      <footer>
-        © 2018 YourNextU
-      </footer>
+      <Footer />
     </div>
   )
 }
